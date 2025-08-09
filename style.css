@@ -43,6 +43,9 @@ html, body {
     font-style: italic;
 }
 
+.hidden {
+    display: none;
+}
 
 .container {
     font-family: "PT Sans", sans-serif;
@@ -60,7 +63,8 @@ html, body {
     align-items: center;
     gap: 10px;
     background-color: #fff;
-    width: 70vh;
+    /* width: 60vw;
+    height: 50vh; */
     border-radius: 10px;
     padding: 2%;
 }
@@ -95,7 +99,7 @@ a {
     padding: 10px 15px;
     background-color: white;
     box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.10);
-    
+
     border-radius: 50%;
 }
 
@@ -107,7 +111,7 @@ a {
 
 .inp {}
 
-.password {
+.pass-inputs {
     display: flex;
     justify-content: center;
 }
@@ -166,6 +170,28 @@ a {
     color: white;
 }
 
+/* Success Msg page */
+
+.success {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.fa-circle-check {
+    color: green;
+    font-size: 50px;
+}
+
+.fa-triangle-exclamation {
+    color: var(--error-red);
+    font-size: 50px;
+}
+
 .footer-sec {}
 
 .action_btn-sec {
@@ -179,13 +205,14 @@ a {
     font-size: large;
     background-color: #4F46E5;
     color: white;
-    padding: 5px;
+    padding: 12px 17px;
     border: none;
     border-radius: 5px;
-    width: 12vw;
-    height: 40px;
+    /* width: 12vw;
+    height: 40px; */
     cursor: pointer;
 }
+
 .action_btn-sec a {
     color: white;
 }
