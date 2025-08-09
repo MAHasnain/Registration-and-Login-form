@@ -44,12 +44,11 @@ function registerUser() {
                 return;
             }
         }
-
+        users.push({ userEmail: reg_email.value, userName: reg_username.value, phoneNumber: reg_phone.value, password: reg_password.value })
+        localStorage.setItem("users", JSON.stringify(users))
+        emptyInputVals(reg_email, reg_username, reg_phone, reg_password, reg_confirm_password)
+        resultPage(`<i class="fa-solid fa-circle-check"></i>`, `Registered`, `Your account has been created.`, `./login.html`, `Login to continue...`)
     }
-    users.push({ userEmail: reg_email.value, userName: reg_username.value, phoneNumber: reg_phone.value, password: reg_password.value })
-    localStorage.setItem("users", JSON.stringify(users))
-    emptyInputVals(reg_email, reg_username, reg_phone, reg_password, reg_confirm_password)
-    resultPage(`<i class="fa-solid fa-circle-check"></i>`, `Registered`, `Your account has been created.`, `./login.html`, `Login to continue...`)
 }
 
 function emptyInputVals(email, username, phoneNumber, password) {
